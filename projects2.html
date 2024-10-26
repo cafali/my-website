@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cafali - projects</title>
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="centered-text">My Projects</a>
+
+        <ul class="projects" id="projects"></ul>
+    </div>
+
+    <a href="projects.html" class="return-link"> <- BACK</a>
+
+    <script>
+        // Manually define your projects here
+        const projectsData = [
+            {
+                name: "SkinDealz (Restricted Access)",
+                description: "SkinDealz is a browser extension aimed at simplifying deal-hunting in various gaming markets",
+                url: "https://github.com/cafali/SkinDealz"
+            },
+            // projects here...
+        ];
+
+        // Function to display projects
+        function displayProjects() {
+            const projectsContainer = document.getElementById('projects');
+
+            // Create list items for each project defined in the projectsData array
+            projectsData.forEach(project => {
+                const listItem = document.createElement('li');
+                listItem.className = 'project-item';
+
+                const title = document.createElement('a');
+                title.className = 'project-title';
+                title.href = project.url;
+                title.target = '_blank';
+                title.textContent = project.name;
+
+                const description = document.createElement('p');
+                description.className = 'project-description';
+                description.textContent = project.description || 'No description available';
+
+                listItem.appendChild(title);
+                listItem.appendChild(description);
+                projectsContainer.appendChild(listItem);
+            });
+        }
+
+        // Display projects when the page loads
+        displayProjects();
+    </script>
+</body>
+</html>
