@@ -176,11 +176,13 @@ body, html {
 }
 
 .prhome-link {
-    bottom: 40px;
+    bottom: 80px;
+    left: 250px;
 }
 
 .prnext-link {
     bottom: 80px;
+    right: 250px;
 }
 
 .prhome-link:hover, .prnext-link:hover {
