@@ -203,11 +203,22 @@ body, html {
 }
 
 .return2-link {
-    bottom: 80px; 
+    bottom: 40px; 
 }
 
 .return2-link:hover {
     color: #ffffff; 
     background-color: #00ff99; 
     transform: translateY(-5px); 
+}
+
+.catalog-link  {
+    position: absolute;
+    font-size: 1em;
+    color: #00ff99;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s;
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    background-color: rgba(0, 255, 153, 0.1); 
 }
