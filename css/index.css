@@ -4,3 +4,20 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.blink {
+    display: inline-block;
+    animation: blink-animation 1.8s infinite;
+}
+
+@keyframes blink-animation {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
