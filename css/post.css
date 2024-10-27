@@ -4,7 +4,7 @@
             text-shadow: 0 0 5px rgba(0, 255, 153, 0.7);
             font-family: 'Press Start 2P', cursive;
             margin: 0;
-            padding: 600px;
+            padding: 450px;
             padding-top: 20px;
             padding-bottom: 20px;
 
@@ -27,8 +27,8 @@
         }
 
         .post:hover {
-    background-color: #333; /* Change to a slightly lighter shade on hover */
-    transition: background-color 0.3s ease; /* Smooth transition effect */
+    background-color: #333; 
+    transition: background-color 0.3s ease; 
 }
 
         .post h2 {
@@ -49,29 +49,28 @@
         }
         
 
-        /* Override text-shadow for .post class */
         .post {
-            text-shadow: none; /* Remove text shadow for this class */
+            text-shadow: none;
         }
         
         .post p {
-            color: #ccc; /* Set text color to white for paragraphs */
+            color: #ccc;
         }
         
         .fixed-link {
-            position: fixed; /* Maintain fixed positioning */
-            text-decoration: none; /* Remove underline */
-            font-size: 15px; /* Font size */
-            color: #00ff99; /* Link color */
+            position: fixed; 
+            text-decoration: none;
+            font-size: 15px; 
+            color: #00ff99; 
         }
         
-        /* Positioning for each link */
+
         .fixed-link.blog {
-            top: 10px; /* Position for the first link */
-            left: 10px; /* Position for the first link */
+            top: 10px; 
+            left: 10px; 
         }
         
         .fixed-link.home {
-            bottom: 10px; /* Position for the second link */
-            left: 10px; /* Position for the second link */
+            bottom: 10px; 
+            left: 10px;
         }
