@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <a href="../index.html" style="position: fixed; top: 10px; left: 10px; text-decoration: none; font-size: 15px; color: #00ff99;">$ cd cafali.art/projects</a>
+    <a href="../index.html" style="position: fixed; bottom: 10px; left: 10px; text-decoration: none; font-size: 15px; color: #00ff99;">home</a>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cafali - projects</title>
+    <link rel="icon" type="image/png" href="../assets/icon.png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <a href="../index.html" class="centered-text">My Projects</a>
+        <a>3/3</a>
+        <ul class="projects" id="projects"></ul>
+    </div>
+
+    <script>
+        const projectsData = [
+            {
+                name: "Loading...",
+                description: "",
+                url: ""
+            },
+            {
+                name: "Loading...",
+                description: "",
+                url: ""
+            },
+            {
+                name: "Loading...",
+                description: "",
+                url: ""
+            },
+        ];
+
+        // display projects
+        function displayProjects() {
+            const projectsContainer = document.getElementById('projects');
+
+            // list items 
+            projectsData.forEach(project => {
+                const listItem = document.createElement('li');
+                listItem.className = 'project-item';
+
+                const title = document.createElement('a');
+                title.className = 'project-title';
+                title.href = project.url;
+                title.target = '_blank';
+                title.textContent = project.name;
+
+                const description = document.createElement('p');
+                description.className = 'project-description';
+                description.textContent = project.description || 'No description available';
+
+                listItem.appendChild(title);
+                listItem.appendChild(description);
+                projectsContainer.appendChild(listItem);
+            });
+        }
+
+        // Display projects when the page loads
+        displayProjects();
+    </script>
+</body>
+</html>
+
+<a href="projects2.html" class="return2-link"> <- BACK</a>
+
+
+
