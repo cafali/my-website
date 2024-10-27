@@ -5,7 +5,7 @@
             width: 100vw;
             height: 100vh;
             z-index: -1; 
-            background: rgb(25, 25, 25);
+            background: #191919;
         }
 
         .container {
@@ -22,7 +22,7 @@
         }
 
         .text-block {
-            background-color: rgba(0, 0, 0, 0.7);
+            background-color: #000000b3;
             padding: 20px;
             border-radius: 5px;
             margin: 10px;
