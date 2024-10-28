@@ -83,3 +83,10 @@ opacity: 0;
 opacity: 1;
 }
 }
+
+body {
+    background-image: url('../assets/background.webp');
+
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
