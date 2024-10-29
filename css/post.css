@@ -23,7 +23,7 @@
             border-radius: 5px;
             padding: 15px;
             margin-bottom: 30px;
-            background-color: #222;
+            background-color: #000000;
             text-shadow: none;
             word-wrap: break-word; /* Ensures long words wrap to the next line */
             max-height: 700px; /* Set a max height for the post */
@@ -32,9 +32,9 @@
         }
         
         .post:hover {
-    background-color: #111111; 
+    background-color: #0a0a0a; 
     transition: background-color 0.3s ease; 
-    box-shadow: 0 0 5px #00ff99, 0 0 5px #00ff99;
+    box-shadow: 0 0 5px #00ff99, 0 0 5px #00ffff;
 }
 
         .post h2 {
