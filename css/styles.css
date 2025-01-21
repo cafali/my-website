@@ -222,3 +222,25 @@ body, html {
     border-radius: 5px; 
     background-color: rgba(0, 255, 153, 0.1); 
 }
+
+.changelog-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 50px;
+}
+.changelog-item {
+    display: inline;
+}
+.changelog-link {
+    color: #00ff99;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s;
+    font-family: 'Press Start 2P', cursive;
+}
+.changelog-link:hover {
+    color: #2abe8a;
+    transform: scale(1.1);
+}
