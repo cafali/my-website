@@ -1,0 +1,330 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #03030a; 
+    color: #ffffff; 
+    font-family: 'Press Start 2P', cursive; 
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.background-gif {
+    background-image: url('/assets/background2.gif');
+
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.blink {
+    display: inline-block;
+    animation: blink-animation 1.8s infinite;
+}
+@keyframes blink-animation {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.centered-text {
+    font-size: 4em; 
+    color: #ff79c6; /* Bright pink */
+    text-decoration: none;
+    margin-bottom: 20px; 
+    text-shadow: 0 0 5px #ff79c6b3;
+    transition: transform 10.0s;
+}
+
+.centered-text:hover {
+    transform: scale(0.9);
+}
+
+
+.about-me {
+    font-size: 1.2em; 
+    color: #ccccff; /* Soft lavender */
+    max-width: 900px;
+    margin-bottom: 20px; 
+}
+
+
+.projects-link {
+    font-size: 1.2em; 
+    color: #ccccff; 
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s;
+    margin-top: 10px;
+}
+
+.projects-link:hover {
+    color: #ff79c6; 
+    transform: translateX(5px);
+}
+
+
+.github-link {
+    position: absolute;
+    bottom: 30px;
+    font-size: 1em;
+    color: #ff79c6;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s;
+    padding: 10px 15px;
+    border-radius: 5px; 
+    background-color: rgba(255, 121, 198, 0.1);
+}
+
+.github-link:hover {
+    color: #ffffff;
+    background-color: #ff79c6; 
+    transform: translateY(-5px); 
+}
+
+
+.projects {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px; 
+    list-style-type: none; 
+    padding: 0; 
+}
+
+.project-item {
+    background-color: #2d2d54; /* Deep purple */
+    border: 2px solid #ff79c6; 
+    border-radius: 5px; 
+    padding: 15px; 
+    margin: 10px 0; 
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.project-item:hover {
+    background-color: #44447a; /* Medium purple */
+    transform: translateY(-5px); 
+}
+
+.project-title {
+    font-size: 1.5em; 
+    color: #ff79c6;
+    text-decoration: none; 
+    transition: color 0.3s ease;
+}
+
+.project-title:hover {
+    color: #ffa3d6; /* Light pink */
+}
+
+.project-description {
+    color: #e0e0ff; /* Light lavender */
+    margin: 5px 0; 
+    font-size: 1em; 
+}
+
+
+.return-link, .next-link {
+    position: absolute;
+    font-size: 1em;
+    color: #ff79c6;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s;
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    background-color: rgba(255, 121, 198, 0.1); 
+}
+
+.return-link {
+    bottom: 30px; 
+}
+
+.next-link {
+    bottom: 70px; 
+}
+
+.return-link:hover, .next-link:hover {
+    color: #ffffff; 
+    background-color: #ff79c6; 
+    transform: translateY(-5px); 
+}
+
+
+@media (max-width: 768px) {
+    .centered-text {
+        font-size: 3em;
+    }
+
+    .project-item {
+        padding: 10px; 
+    }
+
+    .projects-link, .about-me {
+        font-size: 1em; 
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: fadeIn 1s ease forwards; 
+    opacity: 0;
+}
+
+
+.prhome-link, .prnext-link {
+    position: absolute;
+    font-size: 1em;
+    color: #ff79c6;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s;
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    background-color: rgba(255, 121, 198, 0.1); 
+}
+
+.prhome-link {
+    bottom: 30px;
+    left: 250px;
+}
+
+.prnext-link {
+    bottom: 30px;
+    right: 250px;
+}
+
+.prhome-link:hover, .prnext-link:hover {
+    color: #ffffff; 
+    background-color: #ff79c6; 
+    transform: translateY(-5px); 
+}
+
+.return2-link {
+    position: absolute;
+    font-size: 1em;
+    color: #ff79c6;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s;
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    background-color: rgba(255, 121, 198, 0.1); 
+}
+
+.return2-link { 
+    bottom: 30px; 
+}
+
+.return2-link:hover {
+    color: #ffffff; 
+    background-color: #ff79c6; 
+    transform: translateY(-5px); 
+}
+
+.catalog-link  {
+    position: absolute;
+    font-size: 1em;
+    color: #ff79c6;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s;
+    padding: 10px 15px; 
+    border-radius: 5px; 
+    background-color: rgba(255, 121, 198, 0.1); 
+}
+
+.changelog-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 50px;
+}
+.changelog-item {
+    display: inline;
+}
+.changelog-link {
+    color: #ff79c6;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s;
+    font-family: 'Press Start 2P', cursive;
+}
+.changelog-link:hover {
+    color: #ffa3d6;
+    transform: scale(1.1);
+}
+
+.overlay {
+    position: fixed;
+    text-decoration: none;
+    font-size: 15px;
+    color: #ff79c6;
+}
+
+.overlay:nth-of-type(1) {
+    top: 10px;
+    left: 10px;
+}
+
+.overlay.home-link {
+    bottom: 10px;
+    left: 10px;
+}
+
+.overlay.download-link {
+    bottom: 10px;
+    right: 10px;
+}
+
+
+/* Styles for the clock id on index page */
+#clock {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 15px;
+    color: #ff79c6;
+}
+
+
+/* Style for <span> inside <p> */
+p span {
+    color: #00ff99;
+}
+
+/* Common styles for all about.listpos elements */
+.about.listpos1, .about.listpos2, .about.listpos3, .about.listpos4, .about.listpos5, .about.listpos6 {
+    font-weight: bold;
+    font-style: bold;
+    color: #ff84d0;
+}
+
+/* Style for all <p> elements */
+p {
+    color: #f8f8f2;
+}
+
+#matrix-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; 
+    background: #191919;
+}

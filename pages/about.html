@@ -2,27 +2,32 @@
 <html lang="en">
 <head>
     <script src="../scripts/scaleUI.js"></script>
+    <script src="../script/themeSwitcher.js" defer></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cafali - about me</title>
+    
     <link rel="icon" type="image/png" href="../assets/icon.png">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/overlay.css">
+    <link rel="stylesheet" href="../css/themes/pixelcrack.css" id="pixelcrack-style">
+    <link rel="stylesheet" href="../css/themes/terminal.css" id="terminal-style">
+
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <a class="overlay" style="position: fixed; top: 10px; left: 10px; text-decoration: none; font-size: 15px; color: #00ff99;">$ cd cafali.art/about_me</a>
-    <a class="overlay" href="../index.html" style="position: fixed; bottom: 10px; left: 10px; text-decoration: none; font-size: 15px; color: #00ff99;">/home</a>
+    <a class="overlay" href="#">$ cd cafali.art/about-me</a>
+    <a class="overlay home-link" href="../index.html">/home</a>
+
 </head>
 <body>
     <div class="container">
         <a href="../index.html" class="centered-text">About Me</a>
         <div class="about-me">
             <br>
-            <p style="color: #f8f8f2;">$ <span style="color: #00ff99;">su</p>
-            <p style="color: #f8f8f2;">$ <span style="color: #00ff99;">whoami</p>
-            <p style="color: #f8f8f2;">cafali</p>
-            <p style="color: #f8f8f2;">$ <span style="color: #00ff99;">dpkg -i</span> creative-mind.deb</p>
-            <p style="color: #f8f8f2;">$ <span style="color: #00ff99;">echo</span> "Tech | Coding | Graphic Design"</p>
-            <p style="color: #f8f8f2;">$ <span style="color: #00ff99;">echo</span> "Gaming | Electronics | Movies"</p>
+            <p>$ <span class="about listpos1">su</span></p>
+            <p>$ <span class="about listpos2">whoami</span></p>
+            <p>cafali</p>
+            <p>$ <span class="about listpos4">dpkg -i</span> creative-mind.deb</p>
+            <p>$ <span class="about listpos5">echo</span> "Tech | Coding | Graphic Design"</p>
+            <p>$ <span class="about listpos6">echo</span> "Gaming | Electronics | Movies"</p>
+            
         </div>
     </div>
     <a href="../index.html" class="return-link"> <- HOME</a>
