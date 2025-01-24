@@ -7,7 +7,7 @@ function applyThemeByTime() {
     var terminalStyle = document.getElementById('terminal-style');
 
     // apply correct theme based on time
-    if (hour >= 6 && hour < 18) {
+    if (hour >= 6 && hour < 22) {
         pixelcrackStyle.disabled = true; 
         terminalStyle.disabled = false;    
     } else {
