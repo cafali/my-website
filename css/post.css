@@ -1,7 +1,7 @@
         body {
-            background-color: #0a0a0a;
-            color: #00ff99;
-            text-shadow: 0 0 5px rgba(0, 255, 153, 0.7);
+            background-color: #000000;
+            color: #ffffff;
+            text-shadow: 0 0 5px rgba(0, 255, 153, 0.14);
             font-family: 'Press Start 2P', cursive;
             margin: 0;
             padding: 450px;
@@ -19,7 +19,7 @@
             margin: 0;
         }
         .post {
-            border: 1px solid #00ff99;
+            border: 1px solid #000000;
             border-radius: 5px;
             padding: 15px;
             margin-bottom: 30px;
@@ -32,7 +32,7 @@
         }
         
         .post:hover {
-    background-color: #0a0a0a; 
+    background-color: #040404; 
     transition: background-color 0.3s ease; 
     box-shadow: 0 0 5px #00ff99, 0 0 5px #00ffff;
 }
