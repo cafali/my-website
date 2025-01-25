@@ -1,3 +1,18 @@
+/* Color Variables */
+:root {
+    --bg-color: #03030a;  /* background */
+    --text-color: #ffffff;  /* lower buttons */
+    --accent-color: #ff79c6;  /* title color, frames, main color */
+    --hover-color: #ffa3d6;  /* text hover */
+    --soft-lavender: #ccccff;  /* index categories */
+    --deep-purple: #1e1e36;  /* project */
+    --medium-purple: #44447a;  /* project hover */
+    --light-lavender: #e0e0ff;  /* projects text */
+    --bright-green: #ffffff;  /* <span> elements */
+    --faded-purple: #ff79c61a;  /* faded background for buttons */
+}
+
+/* Global styles */
 body, html {
     height: 100%;
     margin: 0;
@@ -5,17 +20,15 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #03030a; 
-    color: #ffffff; 
+    background-color: var(--bg-color); 
+    color: var(--text-color); 
     font-family: 'Press Start 2P', cursive; 
     position: relative;
     overflow: hidden;
-    
 }
 
 .background-gif {
     background-image: url('/assets/background2.gif');
-
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -24,6 +37,7 @@ body, html {
     display: inline-block;
     animation: blink-animation 1.8s infinite;
 }
+
 @keyframes blink-animation {
     0% {
         opacity: 1;
@@ -38,10 +52,10 @@ body, html {
 
 .centered-text {
     font-size: 4em; 
-    color: #ff79c6; /* Bright pink */
+    color: var(--accent-color);
     text-decoration: none;
     margin-bottom: 20px; 
-    text-shadow: 0 0 5px #ff79c6b3;
+    text-shadow: 0 0 5px var(--accent-color);
     transition: transform 10.0s;
 }
 
@@ -49,47 +63,43 @@ body, html {
     transform: scale(0.9);
 }
 
-
 .about-me {
     font-size: 1.2em; 
-    color: #ccccff; /* Soft lavender */
+    color: var(--soft-lavender);
     max-width: 900px;
     margin-bottom: 20px; 
 }
 
-
 .projects-link {
     font-size: 1.2em; 
-    color: #ccccff; 
+    color: var(--soft-lavender); 
     text-decoration: none;
     transition: color 0.3s ease, transform 0.2s;
     margin-top: 10px;
 }
 
 .projects-link:hover {
-    color: #ff79c6; 
+    color: var(--accent-color); 
     transform: translateX(5px);
 }
-
 
 .github-link {
     position: absolute;
     bottom: 30px;
     font-size: 1em;
-    color: #ff79c6;
+    color: var(--accent-color);
     text-decoration: none;
     transition: color 0.3s ease, transform 0.2s;
     padding: 10px 15px;
     border-radius: 5px; 
-    background-color: rgba(255, 121, 198, 0.1);
+    background-color: var(--faded-purple);
 }
 
 .github-link:hover {
-    color: #ffffff;
-    background-color: #ff79c6; 
+    color: var(--text-color);
+    background-color: var(--accent-color); 
     transform: translateY(-5px); 
 }
-
 
 .projects {
     margin-top: 20px;
@@ -100,8 +110,8 @@ body, html {
 }
 
 .project-item {
-    background-color: #1e1e36; /* Deep purple */
-    border: 2px solid #ff79c6; 
+    background-color: var(--deep-purple);
+    border: 2px solid var(--accent-color); 
     border-radius: 5px; 
     padding: 15px; 
     margin: 10px 0; 
@@ -109,37 +119,36 @@ body, html {
 }
 
 .project-item:hover {
-    background-color: #44447a; /* Medium purple */
+    background-color: var(--medium-purple); 
     transform: translateY(-5px); 
 }
 
 .project-title {
     font-size: 1.5em; 
-    color: #ff79c6;
+    color: var(--accent-color);
     text-decoration: none; 
     transition: color 0.3s ease;
 }
 
 .project-title:hover {
-    color: #ffa3d6; /* Light pink */
+    color: var(--hover-color); 
 }
 
 .project-description {
-    color: #e0e0ff; /* Light lavender */
+    color: var(--light-lavender);
     margin: 5px 0; 
     font-size: 1em; 
 }
 
-
 .return-link, .next-link {
     position: absolute;
     font-size: 1em;
-    color: #ff79c6;
+    color: var(--accent-color);
     text-decoration: none;
     transition: color 0.3s ease, transform 0.2s;
     padding: 10px 15px; 
     border-radius: 5px; 
-    background-color: rgba(255, 121, 198, 0.1); 
+    background-color: var(--faded-purple); 
 }
 
 .return-link {
@@ -151,11 +160,10 @@ body, html {
 }
 
 .return-link:hover, .next-link:hover {
-    color: #ffffff; 
-    background-color: #ff79c6; 
+    color: var(--text-color); 
+    background-color: var(--accent-color); 
     transform: translateY(-5px); 
 }
-
 
 @media (max-width: 768px) {
     .centered-text {
@@ -187,16 +195,15 @@ body, html {
     opacity: 0;
 }
 
-
 .prhome-link, .prnext-link {
     position: absolute;
     font-size: 1em;
-    color: #ff79c6;
+    color: var(--accent-color);
     text-decoration: none;
     transition: color 0.3s ease, transform 0.2s;
     padding: 10px 15px; 
     border-radius: 5px; 
-    background-color: rgba(255, 121, 198, 0.1); 
+    background-color: var(--faded-purple); 
 }
 
 .prhome-link {
@@ -210,20 +217,20 @@ body, html {
 }
 
 .prhome-link:hover, .prnext-link:hover {
-    color: #ffffff; 
-    background-color: #ff79c6; 
+    color: var(--text-color); 
+    background-color: var(--accent-color); 
     transform: translateY(-5px); 
 }
 
 .return2-link {
     position: absolute;
     font-size: 1em;
-    color: #ff79c6;
+    color: var(--accent-color);
     text-decoration: none;
     transition: color 0.3s ease, transform 0.2s;
     padding: 10px 15px; 
     border-radius: 5px; 
-    background-color: rgba(255, 121, 198, 0.1); 
+    background-color: var(--faded-purple); 
 }
 
 .return2-link { 
@@ -231,20 +238,20 @@ body, html {
 }
 
 .return2-link:hover {
-    color: #ffffff; 
-    background-color: #ff79c6; 
+    color: var(--text-color); 
+    background-color: var(--accent-color); 
     transform: translateY(-5px); 
 }
 
 .catalog-link  {
     position: absolute;
     font-size: 1em;
-    color: #ff79c6;
+    color: var(--accent-color);
     text-decoration: none;
     transition: color 0.3s ease, transform 0.2s;
     padding: 10px 15px; 
     border-radius: 5px; 
-    background-color: rgba(255, 121, 198, 0.1); 
+    background-color: var(--faded-purple); 
 }
 
 .changelog-list {
@@ -255,17 +262,20 @@ body, html {
     justify-content: center;
     margin-top: 50px;
 }
+
 .changelog-item {
     display: inline;
 }
+
 .changelog-link {
-    color: #ff79c6;
+    color: var(--accent-color);
     text-decoration: none;
     transition: color 0.3s ease, transform 0.2s;
     font-family: 'Press Start 2P', cursive;
 }
+
 .changelog-link:hover {
-    color: #ffa3d6;
+    color: var(--hover-color);
     transform: scale(1.1);
 }
 
@@ -273,7 +283,7 @@ body, html {
     position: fixed;
     text-decoration: none;
     font-size: 15px;
-    color: #ff79c6;
+    color: var(--accent-color);
 }
 
 .overlay:nth-of-type(1) {
@@ -291,27 +301,25 @@ body, html {
     right: 10px;
 }
 
-
 /* Styles for the clock id on index page */
 #clock {
     position: fixed;
     top: 10px;
     right: 10px;
     font-size: 15px;
-    color: #ff79c6;
+    color: var(--accent-color);
 }
-
 
 /* Style for <span> inside <p> */
 p span {
-    color: #00ff99;
+    color: var(--bright-green);
 }
 
 /* Common styles for all about.listpos elements */
 .about.listpos1, .about.listpos2, .about.listpos3, .about.listpos4, .about.listpos5, .about.listpos6 {
     font-weight: bold;
     font-style: bold;
-    color: #ff84d0;
+    color: var(--hover-color);
 }
 
 /* Style for all <p> elements */
