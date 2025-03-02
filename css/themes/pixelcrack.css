@@ -1,15 +1,15 @@
 /* Color Variables */
 :root {
-    --bg-color: #03030a;  /* background */
+    --bg-color: linear-gradient(to bottom, #150039, rgb(19, 0, 15)) !important;
     --text-color: #ffffff;  /* lower buttons */
-    --accent-color: #ff79c6;  /* title color, frames, main color */
-    --hover-color: #ffa3d6;  /* text hover */
-    --soft-lavender: #ccccff;  /* index categories */
-    --deep-purple: #1e1e36;  /* project */
-    --medium-purple: #44447a;  /* project hover */
-    --light-lavender: #e0e0ff;  /* projects text */
+    --accent-color: #ff2bf7;  /* title color, frames, main color */
+    --hover-color: #ffffff;  /* text hover */
+    --soft-lavender: #ff96fb;  /* index categories */
+    --deep-purple: #08000f;  /* project */
+    --medium-purple: #0d0023;  /* project hover */
+    --light-lavender: #d9d9d9;  /* projects text */
     --bright-green: #ffffff;  /* <span> elements */
-    --faded-purple: #ff79c61a;  /* faded background for buttons */
+    --faded-purple: #be00ff1a;  /* faded background for buttons */
 }
 
 /* Global styles */
@@ -21,14 +21,16 @@ body, html {
     justify-content: center;
     align-items: center;
     background-color: var(--bg-color); 
+    background: var(--bg-color);
     color: var(--text-color); 
     font-family: 'Press Start 2P', cursive; 
+    background-attachment: fixed;
     position: relative;
     overflow: hidden;
 }
 
 .background-gif {
-    background-image: url('/assets/background2.gif');
+    background-image: url('/assets/background4.gif');
     background-repeat: no-repeat;
     background-position: center;
 }

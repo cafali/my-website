@@ -1,12 +1,12 @@
 /* Color Variables */
 :root {
-    --bg-color: #0a0a0a;  /* background */
+    --bg-color: linear-gradient(to bottom, #00140c, rgb(0, 0, 0)) !important;
     --text-color: #ffffff;  /* lower buttons */
     --accent-color: #00ff99;  /* title color, frames, main color */
     --hover-color: #00ff99;  /* text hover */
     --soft-lavender: #888;  /* index categories */
-    --deep-purple: #000000;  /* project */
-    --medium-purple: #0d0d0d;  /* project hover */
+    --deep-purple: #000f08;  /* project */
+    --medium-purple: #003830;  /* project hover */
     --light-lavender: #d9d9d9;  /* projects text */
     --bright-green: #ffffff;  /* <span> elements */
     --faded-purple: #00ff991a;  /* faded background for buttons */
@@ -21,14 +21,16 @@ body, html {
     justify-content: center;
     align-items: center;
     background-color: var(--bg-color); 
+    background: var(--bg-color);
     color: var(--text-color); 
     font-family: 'Press Start 2P', cursive; 
+    background-attachment: fixed;
     position: relative;
     overflow: hidden;
 }
 
 .background-gif {
-    background-image: url('/assets/background.webp');
+    background-image: url('/assets/background3.gif');
     background-repeat: no-repeat;
     background-position: center;
 }
