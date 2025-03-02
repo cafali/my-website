@@ -1,125 +1,145 @@
-body {
-    background-color: #141414;
-color: #00ff99;
-text-shadow: 0 0 5px rgba(0, 255, 153, 0.7);
-font-family: 'Press Start 2P', cursive;
-margin: 0;
-padding: 0;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-min-height: 100vh;
-text-align: center;
+:root {
+    --bg-color: linear-gradient(to bottom, #00140c, rgb(0, 0, 0)) !important;
+    --text-color: #ffffff;  
+    --accent-color: #00ff99;  
+    --hover-color: #00ff99;  
+    --soft-lavender: #888;  
+    --deep-purple: #000f08;  
+    --medium-purple: #003830;  
+    --light-lavender: #2aff9a;  
+    --bright-green: #ffffff;  
+    --faded-purple: #00ff991a;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
 
 header {
-margin-bottom: 20px;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
 }
 
-h1 {
-font-size: 2.2em;
-margin: 0;
+header h1 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
 }
 
-nav {
-margin: 20px 0;
-}
-
-.project-link {
-color: #ffffff;
-text-decoration: none;
-padding: 10px 20px;
-font-size: 25px;
-background-color: transparent;
-border-radius: 5px;
-transition: color 0.3s;
-}
-
-.project-link:hover {
-color: #00cc88;
-}
-
-.project-list {
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 10px;
-}
-
-.project-item {
-color: #56ffaa;
-text-decoration: none;
-background-color: #45cc7441;
-padding: 12px 20px;
-border-radius: 15px;
-transition: background-color 0.3s, transform 0.3s;
-width: 90%;
-max-width: 300px;
-text-align: center;
-}
-
-.project-item:hover {
-background-color: #45cc74;
-transform: translateY(-3px);
-}
-
-footer {
-margin-top: 20px;
-font-size: 0.9em;
-}
-
-.footer-links {
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 10px;
-}
-
-.footer-item {
-color: #56ffaa;
-text-decoration: none;
-background-color: transparent;
-padding: 10px 20px;
-border-radius: 5px;
-transition: color 0.3s;
-}
-
-.footer-item:hover {
-color: #00cc88;
-}
-
-.fixed-link {
-position: fixed; 
-text-decoration: none;
-font-size: 14px; 
-color: #00ff99; 
-text-shadow: none;
-}
-
-.fixed-link.blog {
-top: 10px; 
-left: 10px; 
-}
-
-.fixed-link.home {
-bottom: 10px; 
-left: 10px;
-}
 
 .blink {
-display: inline-block;
-animation: blink-animation 1.8s infinite;
+    color: var(--bright-green);
+    animation: blink-animation 1s infinite alternate;
 }
 
 @keyframes blink-animation {
-0% {
-    opacity: 1;
+    from { opacity: 1; }
+    to { opacity: 0.3; }
 }
-50% {
-    opacity: 0;
+
+
+nav {
+    background-color: var(--deep-purple);
+    padding: 15px;
+    border-radius: px;
+    margin: 10px;
+    width: 90%;
+    max-width: 400px;
 }
-100% {
-    opacity: 1;
+
+.project-link {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    display: block;
+    margin-bottom: 10px;
 }
+
+.project-list {
+    padding: 10px;
+}
+
+.project-item {
+    display: block;
+    padding: 12px;
+    margin: 5px 0;
+    background-color: var(--faded-purple);
+    color: var(--light-lavender);
+    border-radius: 0px;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.project-item:hover {
+    background-color: var(--medium-purple);
+    color: var(--text-color);
+}
+
+footer {
+    padding: 15px;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-item {
+    color: var(--text-color);
+}
+
+.footer-item:hover {
+    text-decoration: underline;
+}
+
+.fixed-link {
+    position: fixed;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--deep-purple);
+    border-radius: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.fixed-link.blog {
+    left: 20px;
+}
+
+.fixed-link.home {
+    right: 20px;
+}
+
+.fixed-link:hover {
+    background-color: var(--medium-purple);
 }
