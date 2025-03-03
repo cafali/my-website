@@ -33,6 +33,7 @@ body, html {
     background-image: url('/assets/background4.gif');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: 400px 400px;
 }
 
 .blink {
