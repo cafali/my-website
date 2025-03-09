@@ -1,15 +1,15 @@
-        body {
-            background-color: #000000;
-            color: #ffffff;
-            text-shadow: 0 0 5px rgba(0, 255, 153, 0.14);
-            font-family: 'Press Start 2P', cursive;
-            margin: 0;
-            padding: 350px;
-            padding-top: 20px;
-            padding-bottom: 20px;
+body {
+    background: linear-gradient(to right, #000000, #000b06);
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(0, 255, 153, 0.14);
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 350px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 1.5;
+}
 
-            line-height: 1.5;
-        }
         header {
             text-align: center;
             margin-bottom: 20px;
@@ -19,25 +19,26 @@
             margin: 0;
         }
         .post {
-            border: 1px solid #000000;
+            border: 0px solid #00ff95;
             border-radius: 5px;
             padding: 15px;
             margin-bottom: 30px;
-            background-color: #000000;
+            background-color: #00000000;
             text-shadow: none;
             word-wrap: break-word; /* Ensures long words wrap to the next line */
-            max-height: 700px; /* Set a max height for the post */
-            overflow-y: auto; /* Adds a vertical scrollbar if text overflows */
+            max-height: 700px; /* max height for the post */
+            overflow-y: auto; /* vertical scrollbar if text overflows */
             box-shadow: none
         }
         
-        .post:hover {
-    background-color: #040404; 
-    transition: background-color 0.3s ease; 
-    box-shadow: 0 0 5px #00ff99, 0 0 5px #00ffff;
+    .post:hover {
+    background-color: #00000089; 
+    transition: background-color 0.5s ease; 
+    box-shadow: 0 0 30px #00ff99, 0 0 5px #00ffff;
 }
 
         .post h2 {
+            color: #ffffff;
             font-size: 2em;
             margin-top: 0;
         }
