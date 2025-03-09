@@ -304,6 +304,25 @@ body, html {
     right: 10px;
 }
 
+.overlay.right-link {
+    bottom: 10px;
+    right: 10px;
+}
+
+/* quote home page - mid */
+.overlay.quote-link {
+    bottom: 30px;
+    right: 30px;
+    font-size: 3.2em;
+    opacity: 0;
+}
+
+/* quote home page - mid */
+.overlay.quote-link:hover {
+    font-family: Arial;
+    opacity: 1;
+}
+
 /* Styles for the clock id on index page */
 #clock {
     position: fixed;
