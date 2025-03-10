@@ -358,3 +358,45 @@ p {
     z-index: -1; 
     background: #191919;
 }
+
+.loading-container {
+    text-align: center;
+}
+
+.loading-text {
+    font-size: 2em;
+    color: var(--accent-color);
+    text-shadow: 0 0 10px var(--accent-color);
+}
+
+.blink {
+    display: inline-block;
+    animation: blink-animation 1.5s infinite;
+    color: var(--accent-color);
+}
+
+@keyframes blink-animation {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.loading-bar {
+    width: 300px;
+    height: 20px;
+    border: 2px solid var(--accent-color);
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.loading-progress {
+    width: 0;
+    height: 100%;
+    background: var(--accent-color);
+    animation: load-progress 3s linear infinite;
+}
+
+@keyframes load-progress {
+    0% { width: 0; }
+    100% { width: 100%; }
+}
