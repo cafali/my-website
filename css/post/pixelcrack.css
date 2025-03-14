@@ -1,0 +1,113 @@
+:root {
+    --background-gradient: linear-gradient(to left, #150039, rgb(19, 0, 15)) !important;
+    --text-color: #ff96fb;
+    --text-shadow-color: rgba(0, 255, 153, 0.14);
+    --border-color: #ff2bf7;
+    --hover-bg-color: rgba(43, 0, 43, 0.54);
+    --hover-box-shadow: 0 0 30px #ff2bf7, 0 0 5px #ff96fb;
+    --post-text-color: #e0e0e0;
+    --link-color: #ff2bf7;
+}
+
+body {
+    background: var(--background-gradient);
+    color: var(--text-color);
+    text-shadow: 0 0 5px var(--text-shadow-color);
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 350px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 1.5;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.post {
+    border: 0px solid var(--border-color);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 30px;
+    background-color: transparent;
+    text-shadow: none;
+    word-wrap: break-word;
+    max-height: 700px;
+    overflow-y: auto;
+    box-shadow: none;
+}
+
+.post:hover {
+    background-color: var(--hover-bg-color);
+    transition: background-color 0.5s ease;
+    box-shadow: var(--hover-box-shadow);
+    transform: translateY(-5px);
+}
+
+.post h2 {
+    color: var(--text-color);
+    font-size: 2em;
+    margin-top: 0;
+}
+
+.post p {
+    color: var(--post-text-color);
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.fixed-link {
+    position: fixed;
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--link-color);
+}
+
+.fixed-link.blog {
+    top: 10px;
+    left: 10px;
+}
+
+.fixed-link.home {
+    bottom: 10px;
+    left: 10px;
+}
+
+.overlay {
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--link-color);
+    position: fixed;
+}
+
+.changelog {
+    bottom: 10px;
+    right: 10px;
+}
+
+.download {
+    bottom: 40px;
+    right: 10px;
+}
+
+.home {
+    bottom: 10px;
+    left: 10px;
+}
+
+.blog {
+    top: 10px;
+    left: 10px;
+}
