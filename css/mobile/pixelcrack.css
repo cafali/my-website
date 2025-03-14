@@ -1,0 +1,146 @@
+:root {
+    --bg-color: linear-gradient(to bottom, #150039, rgb(19, 0, 15)) !important;
+    --text-color: #ffffff;
+    --accent-color: #ff2bf7;  
+    --hover-color: #ff96fb; 
+    --soft-lavender: #ff96fb; 
+    --deep-purple: #0e001a;  
+    --medium-purple: #0d0023; 
+    --light-lavender: #ff96fb; 
+    --bright-green: #ffffff;  
+    --faded-purple: #be00ff1a;  
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+
+header {
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+
+.blink {
+    color: var(--bright-green);
+    animation: blink-animation 1s infinite alternate;
+}
+
+@keyframes blink-animation {
+    from { opacity: 1; }
+    to { opacity: 0.3; }
+}
+
+
+nav {
+    background-color: var(--deep-purple);
+    padding: 15px;
+    border-radius: px;
+    margin: 10px;
+    width: 90%;
+    max-width: 400px;
+}
+
+.project-link {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.project-list {
+    padding: 10px;
+}
+
+.project-item {
+    display: block;
+    padding: 12px;
+    margin: 5px 0;
+    background-color: var(--faded-purple);
+    color: var(--light-lavender);
+    border-radius: 0px;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.project-item:hover {
+    background-color: var(--medium-purple);
+    color: var(--text-color);
+}
+
+footer {
+    padding: 15px;
+    margin-top: 20px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-item {
+    color: var(--text-color);
+}
+
+.footer-item:hover {
+    text-decoration: underline;
+}
+
+.fixed-link {
+    position: fixed;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--deep-purple);
+    border-radius: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.fixed-link.blog {
+    left: 20px;
+}
+
+.fixed-link.home {
+    right: 20px;
+}
+
+.fixed-link:hover {
+    background-color: var(--medium-purple);
+}

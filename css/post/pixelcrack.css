@@ -34,7 +34,7 @@ h1 {
 .post {
     border: 0px solid var(--border-color);
     border-radius: 5px;
-    padding: 15px;
+    padding: 30px;
     margin-bottom: 30px;
     background-color: transparent;
     text-shadow: none;

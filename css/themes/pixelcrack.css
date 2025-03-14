@@ -1,4 +1,3 @@
-/* Color Variables */
 :root {
     --bg-color: linear-gradient(to bottom, #150039, rgb(19, 0, 15)) !important;
     --text-color: #ffffff;  /* lower buttons */
